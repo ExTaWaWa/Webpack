@@ -1,0 +1,38 @@
+#app {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  h1 {
+    color: tomato;
+    display: flex;
+  }
+
+  h2 {
+    background: skyblue;
+  }
+}
+
+#pic {
+  .p1 {
+    width: 500px;
+    height: 500px;
+    background: url(../img/1c45bedb9f39880af001c71b722b61a4.png);
+  }
+
+  .p2 {
+    width: 500px;
+    height: 500px;
+    background: url(../img/d90bfea7cca782bfa2c48ce854f34473.JPG);
+  }
+
+  // .p3 {
+  //   width: 500px;
+  //   height: 500px;
+  //   background: url(../img/messageImage_1621344803965.jpg);
+  // }
+}

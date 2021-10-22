@@ -1,0 +1,57 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "jquery": "^3.6.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.2",
+    "autoprefixer": "^10.2.6",
+    "babel-loader": "^8.2.2",
+    "browserslist": "^4.16.6",
+    "copy-webpack-plugin": "^9.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "ejs-webpack-loader": "^2.2.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "postcss-cli": "^8.3.1",
+    "postcss-loader": "^5.3.0",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "//": "這裡補下面這個：",
+    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "start": "cross-env NODE_ENV=development webpack",
+    "deploy": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development webpack server --open --host 192.168.1.111"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 version",
+      "> 1%",
+      "IE 10"
+    ],
+    "development": [
+      "last 2 version",
+      "> 1%",
+      "IE 10"
+    ]
+  },
+  "author": "",
+  "license": "ISC"
+}
